@@ -1,5 +1,7 @@
 # 第 11 章：MCP 集成
 
+> **上一章**我们学习了系统上下文如何通过 Source 抽象和增量更新高效管理 LLM 的推理上下文。本章将介绍 MCP（Model Context Protocol）集成——它是 Opencode 连接外部工具和服务的标准化通道，让 Agent 的能力不再局限于内置工具。
+
 ## 11.1 MCP 概述
 
 MCP（Model Context Protocol）是一个开放标准协议，由 Anthropic 提出，旨在为 LLM 应用提供标准化的工具和数据源交互接口。你可以把 MCP 想象成"AI 应用的 USB-C 接口"——它定义了一套统一的协议，让任何 LLM 应用都能通过标准方式连接外部工具、数据源和服务。
@@ -1060,4 +1062,4 @@ function requestTimeout(s, name, configured, fallback?) {
 - **资源管理**：支持 Prompts、Resources、Resource Templates 三类资源
 - **生命周期管理**：自动连接、断开重连、子进程清理
 
-下一章将深入讲解 Opencode 的插件系统。
+下一章将深入讲解配置与会话管理，看看 Opencode 如何加载多层级配置、持久化会话状态并通过事件溯源实现状态回放。

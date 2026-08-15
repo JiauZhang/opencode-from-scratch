@@ -1,5 +1,7 @@
 # 第 10 章：系统上下文
 
+> **上一章**我们剖析了权限系统，理解了 allow/ask/deny 三级控制如何保护 Agent 的安全执行。本章将介绍系统上下文（SystemContext）——它是 LLM 推理的"世界观"，包含了环境信息、项目状态和指令，与聊天消息分开管理，支持增量更新。
+
 ## 10.1 SystemContext 设计哲学
 
 系统上下文（SystemContext）是 Opencode 中**模型可读的上下文信息**，它与聊天消息分开管理。为什么要做这种分离？因为系统上下文具有独特的生命周期：
@@ -692,4 +694,4 @@ const loadSystemContext = (agent) =>
 
 SystemContext 的设计使得 Opencode 能够在多轮对话中高效地管理模型上下文，避免重复发送不变的信息，同时在环境变化时及时通知模型，从而在 token 效率和上下文准确性之间取得最佳平衡。
 
-下一章将深入讲解配置系统，看看 Opencode 如何管理 JSONC 配置、环境变量和会话生命周期。
+下一章将深入讲解 MCP 集成，看看 Opencode 如何通过 Model Context Protocol 连接外部工具和服务。

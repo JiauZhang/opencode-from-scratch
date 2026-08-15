@@ -128,3 +128,7 @@
 | **工具调用** | LLM 返回 `tool_use` 事件 → ToolRegistry.materialize 查找定义 → Permission 检查 → Schema.decode 解码输入 → 执行工具 → Schema.encode 编码输出 → 返回 tool_result | `packages/core/src/tool/registry.ts` — `materialize()` + `settle()` / `packages/core/src/tool/tool.ts` — `settle()` 执行链 |
 | **配置加载** | 全局配置（`~/.config/opencode/`）→ 项目配置文件（从 CWD 向上查找 `opencode.jsonc`）→ `.opencode/` 目录配置 → 合并（通用配置正向叠加，规则配置反向叠加） | `packages/core/src/config.ts` — `layer` + `latest()` 函数 |
 | **上下文压缩** | 估算 token → 超过阈值（context - buffer）→ 选择压缩点 → 构建摘要 Prompt → 调用 LLM 生成摘要 → 发布 Compaction 事件 → 从压缩后的历史重建 | `packages/core/src/session/compaction.ts` — `compactIfNeeded()` + `compactAfterOverflow()` |
+
+---
+
+> 本速查表涵盖了全书 13 章的核心概念。如需深入了解某个主题，请返回对应章节阅读完整内容。

@@ -1,5 +1,7 @@
 # 第 4 章：Agent 系统
 
+> **上一章**我们掌握了 Effect-TS 的核心概念：Effect、Service、Layer、Schema。本章将运用这些概念来理解 Opencode 的 Agent 系统——它是 AI 角色的定义中心，决定了"Agent 是谁、能做什么、受什么约束"。
+
 ## 4.1 Agent 是什么？
 
 在 Opencode 中，**Agent** 是一个带权限和提示词配置的 AI 角色定义。每个 Agent 定义了：

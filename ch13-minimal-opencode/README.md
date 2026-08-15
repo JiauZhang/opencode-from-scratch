@@ -940,4 +940,4 @@ interface Plugin {
 
 ---
 
-**下一章预告**：我们将深入 Opencode 的 Effect-TS 改造，看看如何用函数式编程让 Agent 代码更健壮、更可组合。
+> 全书 13 章到此结束。如果你希望快速回顾所有核心概念，请查阅[附录：核心概念速查表](../appendix-concepts/README.md)。

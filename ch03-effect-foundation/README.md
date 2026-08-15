@@ -1,5 +1,7 @@
 # 第 3 章：Effect-TS 基础
 
+> **上一章**我们梳理了 Opencode 的项目骨架和启动流程，看到了 Bootstrap、Instance Runtime 和 Layer 系统的轮廓。本章将深入 Effect-TS——这个贯穿整个 Opencode 的函数式编程框架，它是理解后续所有章节的基石。
+
 ## 3.1 为什么选择 Effect-TS？
 
 Opencode 项目最核心的技术决策之一就是**完全基于 Effect-TS 构建**。Effect-TS 是一个 TypeScript 的函数式编程库，提供了类型安全、可组合的方式来处理副作用、错误、依赖注入和并发。
